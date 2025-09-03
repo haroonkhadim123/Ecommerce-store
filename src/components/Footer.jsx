@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FaInstagram,FaFacebook,FaWhatsapp } from "react-icons/fa"
 
 const Footer = () => {
@@ -19,10 +20,10 @@ const Footer = () => {
     <div className="box  w-[100%] mt-16 flex items-center justify-center flex-col space-y-5 absolute bottom-8">
         <h2 className='font-medium text-4xl'>SHOPPER</h2>
         <ul className='space-x-4 flex flex-wrap justify-center'>
-            <a className='text-gray-500' href="/privacy">Privacy Policy</a>
-            <a className='text-gray-500' href="/refund">Refund Policy</a>
-            <a className='text-gray-500' href="/shipping">Shipping Police</a>
-            <a className='text-gray-500' href="term">Term Policy</a>
+            <Link className='text-gray-500' to="/privacy">Privacy Policy</Link>
+            <Link className='text-gray-500' to="/refund">Refund Policy</Link>
+            <Link className='text-gray-500' to="/shipping">Shipping Police</Link>
+            <Link className='text-gray-500' to="/term">Term Policy</Link>
         </ul>
         <ul className='flex space-x-4'>
             <a href="https://www.instagram.com/haroonkhadim23?igsh=cG5wMXVseTB2YW5i"><FaInstagram className='className="text-pink-600  cursor-pointer hover:scale-110 transition'/></a>
