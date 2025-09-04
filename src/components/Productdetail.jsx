@@ -36,7 +36,7 @@ const Productdetail = () => {
                 <p>${detail?.price}</p>
                 <button className='bg-black text-white rounded-2xl px-2.5 py-0.5'>Sale</button>
                 </div>
-                <p className='text-gray-500'>Taxes included. <Link className='underline' href="/shipping">Shipping</Link> calculated at checkout.</p>
+                <p className='text-gray-500'>Taxes included. <Link className='underline' to="/shipping">Shipping</Link> calculated at checkout.</p>
                 <p className='text-gray-500'>Size</p>
                 <ul className='flex flex-row gap-3.5'>
                     {["S", "M", "L"].map((size) => (
