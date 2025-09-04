@@ -20,7 +20,7 @@ We currently ship to [list of locations – e.g., nationwide within Pakistan or 
 
 Delivery times vary depending on your location and the shipping method chosen at checkout. Standard delivery usually takes [e.g., 3–7 business days], while express options may be faster. Please note that delivery times are estimates and may be affected by factors beyond our control, such as weather or courier delays.</p>
 
-                    <p><strong>Shipping Costs</strong>
+                    <p><strong>Shipping Costs:</strong>
 
 Shipping charges are calculated at checkout based on the delivery location and selected shipping method. We may offer free shipping promotions on certain orders (e.g., above a minimum purchase amount).</p>
 
@@ -29,10 +29,10 @@ Shipping charges are calculated at checkout based on the delivery location and s
 
 While we do our best to ensure timely delivery, delays can occasionally occur. We are not responsible for shipping delays caused by courier companies, customs clearance, or events beyond our control.
 </p>
-<p><strong>Tracking Your Orde</strong>r
+<p><strong>Tracking Your Orde:</strong>r
 
 Once your order has been shipped, you will receive a tracking number via email or SMS, allowing you to follow your package until it reaches your doorstep.</p>
-<p><strong>Lost or Damaged Packages</strong>
+<p><strong>Lost or Damaged Packages:</strong>
 
 If your package is lost or arrives damaged, please contact our customer service within [2 days, e.g., 48 hours] so we can investigate and arrange a replacement or refund where applicable.</p>
                 </div>

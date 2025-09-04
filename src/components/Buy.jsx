@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector,useDispatch } from 'react-redux'
 import { useForm } from 'react-hook-form'
-import { clear } from './redux/counter/counterSlice'
+import { clear } from '../redux/counter/counterSlice'
 import toast from 'react-hot-toast'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'

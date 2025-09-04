@@ -1,6 +1,6 @@
 import React from 'react'
-import image2 from './assets/image2.jpg'
-import Loader from './components/Loader'
+import image2 from '../assets/image2.jpg'
+import Loader from './Loader'
 import { Link } from 'react-router-dom'
 import { useState,useEffect } from 'react'
 

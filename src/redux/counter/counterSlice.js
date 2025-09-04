@@ -7,7 +7,7 @@ export const counterSlice = createSlice({
   name: 'counter',
   initialState: {
     
-    items: savedItems,  // ✅ initialize with saved items
+    items: [],  // ✅ initialize with saved items
     total: 0,
   },
   reducers: {
@@ -17,9 +17,10 @@ export const counterSlice = createSlice({
 
       if (!exist) {
         state.items.push({ ...item, qty: 1 });
+        return
       }
       // ✅ save to localStorage
-      localStorage.setItem("cartItems", JSON.stringify(state.items));
+    
     },
 
     buy: (state, action) => {
@@ -30,14 +31,14 @@ export const counterSlice = createSlice({
         state.items.push({ ...item, qty: 1 });
         return
       } 
-      localStorage.setItem("cartItems", JSON.stringify(state.items));
+      
     },
 
     remove: (state, action) => {
       const id = action.payload;
       state.items = state.items.filter(i => i.id !== id);
 
-      localStorage.setItem("cartItems", JSON.stringify(state.items));
+      
     },
 
     increase: (state, action) => {
@@ -45,7 +46,7 @@ export const counterSlice = createSlice({
       if (item) {
         item.qty += 1;
       }
-      localStorage.setItem("cartItems", JSON.stringify(state.items));
+    
     },
 
     decrease: (state, action) => {
@@ -53,12 +54,12 @@ export const counterSlice = createSlice({
       if (item && item.qty > 1) {
         item.qty -= 1;
       }
-      localStorage.setItem("cartItems", JSON.stringify(state.items));
+      
     },
 
     clear: (state) => {
       state.items = [];
-      localStorage.removeItem("cartItems"); // ✅ clear localStorage
+    
     },
   },
 });

@@ -1,13 +1,14 @@
 import React from 'react'
 import {FaTrash} from 'react-icons/fa6'
 import { useSelector,useDispatch } from 'react-redux'
-import { remove,increase,decrease,buy } from './redux/counter/counterSlice'
+import { remove,increase,decrease,buy } from '../redux/counter/counterSlice'
 import { Link } from 'react-router-dom'
 
 const Cart = () => {
      const {items} = useSelector((state) => state.counter)
     const dispatch=useDispatch()
       const total = items.reduce((acc, item) => acc + item.price * item.qty, 0);
+      
   return (
     <div>
           <div className="container flex flex-col justify-center items-center gap-4 mt-14 w-[80vw] m-auto">

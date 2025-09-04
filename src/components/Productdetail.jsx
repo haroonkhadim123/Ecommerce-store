@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 import { useEffect,useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { addcart,increase,decrease } from './redux/counter/counterSlice'
+import { addcart,increase,decrease } from '../redux/counter/counterSlice'
 import { NavLink } from 'react-router-dom'
 
 const Productdetail = () => {
@@ -22,7 +22,7 @@ const Productdetail = () => {
         detailproduct();
     
     }, [id])
-      const cartItem = items.find((item) => item.id === detail?.id);
+      const cartItem = items.find((item) => item.id!== detail?.id);
 
   return (
     <div>
@@ -51,12 +51,7 @@ const Productdetail = () => {
             ))}
                     
                 </ul>
-                <p className='text-gray-500'>Quantity</p>
-                <span className='flex flex-row gap-3.5 border border-gray-600 w-[150px] p-2 items-center justify-around text-gray-500 text-xl'>
-                    <span className='cursor-pointer' onClick={()=>dispatch(decrease(detail.id))}>-</span>
-                    <span>{cartItem?.qty || 1}</span>
-                    <span className='cursor-pointer' onClick={()=>dispatch(increase(detail.id))}>+</span>
-                </span>
+               
                 <div className='flex gap-3.5 flex-col'>
                 <Link className='text-gray-500 border border-black md:w-[250px] w-[100%] p-2 item-center justify-center flex' to="/cart" onClick={()=>dispatch(addcart(detail))}>Add to cart</Link>
                 <Link className='text-white border bg-black md:w-[250px] w-[100%] p-2 item-center justify-center flex' to='/buy' onClick={()=>dispatch(addcart(detail))}>Buy it now</Link>
